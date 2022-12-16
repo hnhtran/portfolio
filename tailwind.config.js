@@ -5,7 +5,16 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      'ubuntu': ['Ubuntu', 'Cinzel', 'Inconsolata', 'Lobster', 'Lora', 'Tangerine']
+    },
+    extend: {
+      colors: {
+        'green': {
+          DEFAULT: '#00f260',
+        },
+      },
+    },
   },
   plugins: [],
 }
