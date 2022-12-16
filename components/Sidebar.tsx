@@ -18,13 +18,6 @@ export const Sidebar = () => {
       <p className="px-2 py-1 my-3 bg-gray-200 rounded-full">
         Software Engineer
       </p>
-      {/* <a
-        className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full"
-        href=""
-        download=""
-      >
-        <FcDocument className="w-6 h-6" /> Download Resume
-      </a> */}
 
       <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full">
         {/* <a href="https://github.com/hnhtran" className='flex flex-col items-center justify-between text-center text-white duration-300 hover:text-green'> */}
