@@ -5,4 +5,17 @@
 body {
   background-color: black;
   font-family: sans-serif;
+  color: #354358;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1700px){
+  #skillIcon {
+    font-size: 0.01rem;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  #skillIcon {
+    font-size: 0.01rem;
+  }
 }

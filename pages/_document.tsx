@@ -15,7 +15,7 @@ export default function Document() {
         ></link>
         <link rel="shortcut icon" href="tranGH.jpeg" type="image/x-icon" />
       </Head>
-      <body className="bg-gradient-to-r from-green to-blue-400">
+      <body className="bg-fixed bg-gradient-to-r from-green to-blue-500 dark:from-dark-700 dark:to-dark-300 dark:text-white">
         <Main />
         <NextScript />
       </body>

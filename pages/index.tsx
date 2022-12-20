@@ -16,12 +16,12 @@ export default function Home() {
         <br /> When I'm not coding, you can find me gardening, spending time
         with family, or reading a book.
       </h5>
-      <div className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100" style={{marginLeft:'-1.5rem', marginRight:'-1.5rem'}}>
-        <h4 className="my-3 text-xl font-bold tracking-wide">I do</h4>
+      <div className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark" style={{marginLeft:'-1.5rem', marginRight:'-1.5rem'}}>
+        <h4 className="my-3 text-xl font-bold tracking-wide">Working with me? You will find I do</h4>
         <div className="grid gap-6 my-3 md:grid-cols-2">
           {services.map((service) => (
           <div 
-          className="col-span-2 p-10 bg-gray-200 rounded-lg dark:bg-blend-darken md:col-span-1"
+          className="col-span-2 p-10 bg-gray-200 rounded-lg dark:bg-dark-700 md:col-span-1"
           key={service.title}>
           <ServiceCard service={service} />
           </div>))}
