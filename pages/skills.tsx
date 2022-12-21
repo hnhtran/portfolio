@@ -15,7 +15,7 @@ export default function skills() {
           </div>
         </div>
         <div>
-          <h5 className="my-3 text-2xl font-bold">Frameworks & Tools</h5>
+          <h5 className="my-3 text-2xl font-bold">Cloud, Tools & Frameworks</h5>
           <div className="my-2">
             {toolsFramework.map((tool) => (
               <Bar data={tool} key={tool.name} />
