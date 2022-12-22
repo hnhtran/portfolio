@@ -25,31 +25,37 @@ const ProjectCard: FunctionComponent<{ project: Project }> = ({
       <p className="my-2 text-center">{name}</p>
 
       {showDetail && (
-        <div className="absolute top-0 left-0 z-10 grid w-full bg-gray-200 dark:text-white dark:bg-dark-100 gap-x-12 md:grid-cols-2">
+        <div 
+        className="absolute top-0 left-0 z-10 grid w-full bg-gray-200 dark:text-white dark:bg-dark-100 gap-x-12"
+        id="card-detail-grid-tailored"
+        >
           <div>
+          <div className="flex justify-center mt-4 ml-2">
             <Image 
             src={image_path} 
             alt={name} 
             width="300"
       height="200"
+      className="flex items-center"
             />
-            <div className="flex justify-center my-4 space-x-3">
+            </div>
+            <div className="flex justify-center my-4 ml-2 space-x-3">
               <a
                 href={github_url}
-                className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
+                className="flex items-center px-3 py-2 space-x-3 text-lg bg-gray-300 dark:bg-dark-200"
               >
                 <AiFillGithub /> <span>Github</span>
               </a>
               <a
                 href={deployed_url}
-                className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
+                className="flex items-center px-3 py-2 space-x-3 text-lg bg-gray-300 dark:bg-dark-200"
               >
                 <AiFillProject /> <span>Project</span>
               </a>
             </div>
           </div>
 
-          <div>
+          <div className="mt-4">
             <h2 className="mb-3 text-xl font-medium md:text-2xl">{name}</h2>
             <h3 className="mb-3 font-medium">{description}</h3>
             <div className="flex flex-wrap mt-5 space-x-2 text-sm tracking-wider">
