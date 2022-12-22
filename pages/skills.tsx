@@ -4,7 +4,7 @@ import Bar from "../components/Bar";
 
 export default function skills() {
   return (
-    <div className="px-6 py-2">
+    <div className="px-6 py-2 overflow-auto">
       <div className="grid gap-9 lg:grid-cols-2">
         <div>
           <h5 className="my-3 text-2xl font-bold">Languages</h5>

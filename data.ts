@@ -112,16 +112,16 @@ export const languages:Skill[] = [
         level: '50%',
         Icon: FaNodeJs
     },
-    {
-        name: 'C#',
-        level: '30%',
-        Icon: TbCSharp
-    },
-    {
-        name: 'Java',
-        level: '30%',
-        Icon: FaJava
-    }
+    // {
+    //     name: 'C#',
+    //     level: '30%',
+    //     Icon: TbCSharp
+    // },
+    // {
+    //     name: 'Java',
+    //     level: '30%',
+    //     Icon: FaJava
+    // }
 ]
 
 export const projects:Project[] = [
