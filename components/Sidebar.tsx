@@ -39,7 +39,7 @@ export const Sidebar = () => {
           {"\n"}
           <AiFillLinkedin className="w-8 h-8 cursor-pointer text-green" />
         </a>
-        <a href="https://drive.google.com/file/d/1ZoeMMXQt9BMygh2fASbDNZYR9EiyTxp2/view?usp=sharing" className='flex flex-col items-center justify-between text-center'>
+        <a href="https://drive.google.com/file/d/1F92iJdmTbqRIi9vZ3ZbCqoC0DTCsJ-hP/view?usp=sharing" className='flex flex-col items-center justify-between text-center'>
         Resume
           {"\n"}
           <BsPersonLinesFill className="w-8 h-8 cursor-pointer text-green" />
