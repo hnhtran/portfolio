@@ -22,4 +22,4 @@ export interface Project {
     key_techs: string[]
 }
 
-export type Category = 'all' | 'django-react' | 'mern' | 'express' | 'canvas' | 'vanilla javascript'
+export type Category = 'all' | 'django' | 'react' | 'express' | 'canvas' | 'vanilla js'

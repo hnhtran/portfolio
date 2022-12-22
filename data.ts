@@ -131,7 +131,7 @@ export const projects:Project[] = [
         image_path: '/images/snake.png',
         deployed_url: 'https://canvas-snake-game-nine.vercel.app/',
         github_url: 'https://github.com/hnhtran/CanvasSnakeGame',
-        category: ['canvas', 'vanilla javascript'],
+        category: ['canvas', 'vanilla js'],
         key_techs: ['JavaScript', 'HTML', 'CSS', 'Canvas']
     },
     {
@@ -140,11 +140,11 @@ export const projects:Project[] = [
         image_path: '/images/crash-the-language.png',
         deployed_url: 'https://crash-the-languages-five.vercel.app/',
         github_url: 'https://github.com/hnhtran/Crash-the-Languages',
-        category: ['vanilla javascript'],
+        category: ['vanilla js'],
         key_techs: ['JavaScript', 'HTML', 'CSS']
     },
     {
-        name: 'Financial-Bookkeeping-App',
+        name: 'Financial-Bookkeeping',
         description: 'A simple bookkeeping app built with express, mongodb, and liquidjs',
         image_path: '/images/financial-bookkeeping-app.png',
         deployed_url: 'https://financial-bookeeping.onrender.com',
@@ -158,7 +158,7 @@ export const projects:Project[] = [
         image_path: '/images/instacats.png',
         deployed_url: 'https://instacatjat.onrender.com/',
         github_url: 'https://github.com/hnhtran/InstaCat',
-        category: ['mern'],
+        category: ['react', 'express'],
         key_techs: ['JavaScript', 'React', 'Node.js', 'Express', 'MongoDB']
     },
     {
