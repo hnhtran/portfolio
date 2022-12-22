@@ -7,13 +7,13 @@ export default function Home() {
   return (
     <div className="flex flex-col flex-grow px-6 pt-1">
       <h5 className="my-3 text-base font-medium">
-        Hi, I'm Tran Huynh. I love building things that live on the internet,
+        Hi, I&apos;m Tran Huynh. I love building things that live on the internet,
         whether that be websites, applications, or anything in between. My goal
         is to always build products that bring value to the end user.
-        <br /> I love problem solving and learning new things. I'm always
+        <br /> I love problem solving and learning new things. I&apos;m always
         looking for new opportunities to work on challenging projects and learn
         new skills.
-        <br /> When I'm not coding, you can find me gardening, spending time
+        <br /> When I&apos;m not coding, you can find me gardening, spending time
         with family, or reading a book.
       </h5>
       <div className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark" style={{marginLeft:'-1.5rem', marginRight:'-1.5rem'}}>

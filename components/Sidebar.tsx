@@ -4,6 +4,7 @@ import { FiMail, FiPhone } from "react-icons/fi";
 import { FcDocument } from "react-icons/fc";
 import { BsPersonLinesFill } from "react-icons/bs";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 
 export const Sidebar = () => {
     const { theme, setTheme } = useTheme()
@@ -12,10 +13,12 @@ export const Sidebar = () => {
     }
   return (
     <div>
-      <img
-        src="tranGH.jpeg"
+      <Image
+        src="/tranGH.jpeg"
         alt="profile picture"
         className="w-32 h-32 mx-auto rounded-full"
+        width="128"
+        height="128"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider font-ubuntu">
         Tran Huynh
