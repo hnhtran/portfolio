@@ -155,7 +155,7 @@ export const projects:Project[] = [
     {
         name: 'InstaCats',
         description: 'A clone instagram for cat lovers built with MongoDB, Express, React, Node.js (MERN) stack',
-        image_path: '/images/instacats.png',
+        image_path: '/images/Instacats.png',
         deployed_url: 'https://instacatjat.onrender.com/',
         github_url: 'https://github.com/hnhtran/InstaCat',
         category: ['react', 'express'],
