@@ -28,7 +28,7 @@ export default function Projects() {
         active={active}
       />
       <div className="overflow-y-auto" style={{height: "60vh"}}>
-        <div className="relative grid grid-cols-12 gap-4 m-5 overflow-y-auto">
+        <div className="relative grid grid-cols-12 gap-4 m-5 w-fit">
         {projects.map((project) => (
           <div key={project.name} className="col-span-12 p-2 m-2 bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-4" id="col-span-6-modified">
             <ProjectCard project={project} key={project.name} />
