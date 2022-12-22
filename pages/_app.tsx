@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <div className="h-full col-span-12 p-4 text-center bg-white dark:bg-dark-500 shadow-custom-light dark:shadow-custom-dark lg:col-span-4 rounded-2xl">
           <Sidebar />
         </div>
-        <div className="flex flex-col col-span-12 overflow-hidden bg-white dark:bg-dark-500 lg:col-span-8 rounded-2xl shadow-custom-light dark:shadow-custom-dark">
+        <div className="flex flex-col col-span-12 overflow-hidden bg-white dark:bg-dark-500 lg:col-span-8 rounded-2xl shadow-custom-light dark:shadow-custom-dark" style={{height: "85vh"}}>
           <NavBar />
           <Component {...pageProps} />
         </div>
