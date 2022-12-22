@@ -1,5 +1,5 @@
 import { FaJava, FaAws, FaReact, FaFigma, FaPython, FaHtml5, FaCss3, FaNodeJs } from 'react-icons/fa'
-import { Service, Skill } from './type'
+import { Project, Service, Skill } from './type'
 import { SiDotnet, SiMicrosoftazure, SiDjango, SiTypescript, SiExpress, SiMongodb, SiPostgresql, SiTailwindcss } from 'react-icons/si'
 import { DiJavascript } from 'react-icons/di'
 import { IoLogoNodejs } from 'react-icons/io'
