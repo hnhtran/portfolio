@@ -5,7 +5,9 @@ import { Project } from "../type";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const ProjectCard: FunctionComponent<{ project: Project }> = ({
+const ProjectCard: FunctionComponent<{
+  project: Project;
+}> = ({
   project: {
     name,
     description,
@@ -13,45 +15,46 @@ const ProjectCard: FunctionComponent<{ project: Project }> = ({
     deployed_url,
     github_url,
     category,
-    key_techs,
-  },
+    key_techs
+  }
 }) => {
   const [showDetail, setShowDetail] = useState(false);
 
   const variants = {
     initial: {
       opacity: 0,
-      y: 20,
+      y: 60,
     },
     animate: {
       opacity: 1,
-      y: 0
+      y: 0,
     },
   };
+
+  const handlerClick = () => {
+    setShowDetail(true);
+  }
+
   return (
-    <div
-    className="flex flex-col items-center justify-center m-2 overflow-hidden bg-gray-200 rounded-lg shadow-30 dark:bg-dark-200">
+    <div className="flex flex-col items-center justify-center m-2 bg-gray-200 rounded-lg shadow-30 dark:bg-dark-200">
       <Image
-        onClick={() => setShowDetail(true)}
+      id="image"
         src={image_path}
         alt={name}
-        className="cursor-pointer"
         width="300"
         height={showDetail ? "200" : "150"}
+        className="z-0 cursor-pointer"
+        onClick={() => handlerClick()}
       />
       <p className="my-2 text-center">{name}</p>
-
-      {showDetail && (
+      {
+      showDetail && (
         <div
-          className="absolute top-0 left-0 z-10 grid w-full bg-gray-200 dark:text-white dark:bg-dark-100 gap-x-12"
+          className="absolute top-0 left-0 z-10 grid w-full h-auto text-black bg-gray-200 dark:text-white dark:bg-dark-100"
           id="card-detail-grid-tailored"
         >
-          <motion.div
-          variants={variants}
-          initial="initial"
-          animate="animate"
-          >
-            <div className="flex justify-center mt-4 ml-2">
+          <motion.div variants={variants} initial="initial" animate="animate">
+            <div className="flex justify-center m-4 ml-2">
               <Image
                 src={image_path}
                 alt={name}
@@ -76,11 +79,12 @@ const ProjectCard: FunctionComponent<{ project: Project }> = ({
             </div>
           </motion.div>
 
-          <motion.div 
-          variants={variants}
-          initial="initial"
-          animate="animate"
-          className="mt-4">
+          <motion.div
+            variants={variants}
+            initial="initial"
+            animate="animate"
+            className="m-4"
+          >
             <h2 className="mb-3 text-xl font-medium md:text-2xl">{name}</h2>
             <h3 className="mb-3 font-medium">{description}</h3>
             <div className="flex flex-wrap mt-5 space-x-2 text-sm tracking-wider">
@@ -102,7 +106,8 @@ const ProjectCard: FunctionComponent<{ project: Project }> = ({
             <IoMdClose size={30} />
           </button>
         </div>
-      )}
+      )
+      }
     </div>
   );
 };

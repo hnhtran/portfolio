@@ -19,7 +19,8 @@ export interface Project {
     deployed_url: string,
     github_url: string,
     category: Category[],
-    key_techs: string[]
+    key_techs: string[],
+    showDetail: boolean
 }
 
 export type Category = 'all' | 'django' | 'react' | 'express' | 'canvas' | 'vanilla js'

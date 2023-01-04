@@ -132,7 +132,8 @@ export const projects:Project[] = [
         deployed_url: 'https://canvas-snake-game-nine.vercel.app/',
         github_url: 'https://github.com/hnhtran/CanvasSnakeGame',
         category: ['canvas', 'vanilla js'],
-        key_techs: ['JavaScript', 'HTML', 'CSS', 'Canvas']
+        key_techs: ['JavaScript', 'HTML', 'CSS', 'Canvas'],
+        showDetail: false
     },
     {
         name: 'Crash The Language',
@@ -141,7 +142,8 @@ export const projects:Project[] = [
         deployed_url: 'https://crash-the-languages-five.vercel.app/',
         github_url: 'https://github.com/hnhtran/Crash-the-Languages',
         category: ['vanilla js'],
-        key_techs: ['JavaScript', 'HTML', 'CSS']
+        key_techs: ['JavaScript', 'HTML', 'CSS'],
+        showDetail: false
     },
     {
         name: 'Financial-Bookkeeping',
@@ -150,7 +152,8 @@ export const projects:Project[] = [
         deployed_url: 'https://financial-bookeeping.onrender.com',
         github_url: 'https://github.com/hnhtran/Financial-Bookeeping-App',
         category: ['express'],
-        key_techs: ['JavaScript', 'Express', 'MongoDB', 'Liquidjs']
+        key_techs: ['JavaScript', 'Express', 'MongoDB', 'Liquidjs'],
+        showDetail: false
     },
     {
         name: 'InstaCats',
@@ -159,7 +162,8 @@ export const projects:Project[] = [
         deployed_url: 'https://instacatjat.onrender.com/',
         github_url: 'https://github.com/hnhtran/InstaCat',
         category: ['react', 'express'],
-        key_techs: ['JavaScript', 'React', 'Node.js', 'Express', 'MongoDB']
+        key_techs: ['JavaScript', 'React', 'Node.js', 'Express', 'MongoDB'],
+        showDetail: false
     },
     {
         name: 'Trasia-watches-store',
@@ -168,6 +172,7 @@ export const projects:Project[] = [
         deployed_url: 'https://trasia-watches-store.onrender.com/',
         github_url: 'https://github.com/trasia-watches-store',
         category: ['django', 'react'],
-        key_techs: ['Django', 'React', 'PostgreSQL']
+        key_techs: ['Django', 'React', 'PostgreSQL'],
+        showDetail: false
     }
 ]
