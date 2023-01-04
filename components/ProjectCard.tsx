@@ -3,6 +3,7 @@ import { AiFillGithub, AiFillProject } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
 import { Project } from "../type";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const ProjectCard: FunctionComponent<{ project: Project }> = ({
   project: {
@@ -16,8 +17,20 @@ const ProjectCard: FunctionComponent<{ project: Project }> = ({
   },
 }) => {
   const [showDetail, setShowDetail] = useState(false);
+
+  const variants = {
+    initial: {
+      opacity: 0,
+      y: 20,
+    },
+    animate: {
+      opacity: 1,
+      y: 0
+    },
+  };
   return (
-    <div className="flex flex-col items-center justify-center m-2 overflow-hidden bg-gray-200 rounded-lg shadow-30 dark:bg-dark-200">
+    <div
+    className="flex flex-col items-center justify-center m-2 overflow-hidden bg-gray-200 rounded-lg shadow-30 dark:bg-dark-200">
       <Image
         onClick={() => setShowDetail(true)}
         src={image_path}
@@ -33,7 +46,11 @@ const ProjectCard: FunctionComponent<{ project: Project }> = ({
           className="absolute top-0 left-0 z-10 grid w-full bg-gray-200 dark:text-white dark:bg-dark-100 gap-x-12"
           id="card-detail-grid-tailored"
         >
-          <div>
+          <motion.div
+          variants={variants}
+          initial="initial"
+          animate="animate"
+          >
             <div className="flex justify-center mt-4 ml-2">
               <Image
                 src={image_path}
@@ -57,9 +74,13 @@ const ProjectCard: FunctionComponent<{ project: Project }> = ({
                 <AiFillProject /> <span>Project</span>
               </a>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="mt-4">
+          <motion.div 
+          variants={variants}
+          initial="initial"
+          animate="animate"
+          className="mt-4">
             <h2 className="mb-3 text-xl font-medium md:text-2xl">{name}</h2>
             <h3 className="mb-3 font-medium">{description}</h3>
             <div className="flex flex-wrap mt-5 space-x-2 text-sm tracking-wider">
@@ -72,7 +93,7 @@ const ProjectCard: FunctionComponent<{ project: Project }> = ({
                 </span>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           <button
             onClick={() => setShowDetail(false)}
