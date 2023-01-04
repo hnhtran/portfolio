@@ -23,7 +23,7 @@ const ProjectCard: FunctionComponent<{
   const variants = {
     initial: {
       opacity: 0,
-      y: 60,
+      y: 20,
     },
     animate: {
       opacity: 1,
