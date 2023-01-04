@@ -23,8 +23,25 @@ export default function Home() {
       }
     }
   }
+  const routeAnimation = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        when: "beforeChildren",
+        staggerChildren: 0.25,
+      },
+    }
+  }
   return (
-    <div className="flex flex-col flex-grow px-6 pt-1 overflow-auto">
+    <motion.div 
+    variants={routeAnimation}
+    initial="initial"
+    animate="animate"
+    className="flex flex-col flex-grow px-6 pt-1 overflow-auto">
       <h5 className="my-3 text-base font-medium">
         Hi, I&apos;m Tran Huynh. I love building things that live on the
         internet, whether that be websites, applications, or anything in
@@ -59,7 +76,7 @@ export default function Home() {
           ))}
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
